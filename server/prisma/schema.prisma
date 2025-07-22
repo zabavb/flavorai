@@ -26,7 +26,10 @@ model Recipe {
   title        String
   ingredients  String
   instructions String
-  rating       Float?
+  createdAt   DateTime @default(now())
+  rating       Float?   // average rating
+  ratingsCount Int      @default(0)
+  totalRating  Int      @default(0)
   authorId     String
   author       User     @relation(fields: [authorId], references: [id])
 }
