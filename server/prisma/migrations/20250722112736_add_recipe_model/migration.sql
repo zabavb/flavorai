@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Recipe" ADD COLUMN     "ratingsCount" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "totalRating" INTEGER NOT NULL DEFAULT 0;
